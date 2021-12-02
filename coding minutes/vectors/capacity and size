@@ -1,0 +1,13 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector<int> arr={1,2,3};
+    cout<<"before"<<endl;
+    cout<<arr.size()<<endl;
+    cout<<arr.capacity()<<endl;
+    cout<<"after the push back"<<endl;
+    arr.push_back(4);
+    cout<<arr.size()<<endl;
+    cout<<arr.capacity()<<endl;
+}
