@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char dir[100];
+    cin.getline(dir,100,'\n');
+    int x=0,y=0;//stats at x=0 and y=0;
+    for(int i=0;dir[i]!='\0';i++){
+        if(dir[i]=='E'){
+            x++;
+        }else if(dir[i]=='W'){
+            x--;
+        }else if(dir[i]=='N'){
+            y++;
+        }else{
+            y--;
+        }
+    }
+    cout<<"after:"<<"x : "<<x<<" and y: "<<y;
+    cout<<endl;
+    if(x>0&&y>0){
+        for(int i=1;i<=x;i++){
+            cout<<"E";
+        }
+        for(int i=1;i<=y;i++){
+            cout<<"N";
+        }
+    }
+    if(x>0&&y<0){
+        for(int i=1;i<=x;i++){
+            cout<<"E";
+        }
+        for(int i=y;i<0;i++){
+            cout<<"S";
+        }
+    }
+}
