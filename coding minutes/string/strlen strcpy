@@ -1,0 +1,14 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+    char s[100]="anudeep";
+    char arr[100]="kasu";
+    int len1=strlen(s);
+    int len2=strlen(arr);
+    strcat(s,arr);
+    cout<<s<<endl;
+    cout<<"length of first "<<len1<<"length of second "<<len2<<endl;
+    strcpy(arr,s);
+    cout<<arr<<endl;
+}
