@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+    string s;  //dynamic array
+    getline(cin,s,'\n');
+    cout<<s<<endl;
+    for(char x:s){
+        cout<<x;
+    }
+}
