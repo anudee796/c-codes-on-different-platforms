@@ -1,0 +1,11 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+    char c[30]="anudeep";
+    char s[20]="anudeep";
+    int a=strcmp(c,s);
+    if(a==0){
+        cout<<"both string are same"<<endl;
+    }
+}
