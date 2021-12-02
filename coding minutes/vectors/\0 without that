@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char arr[5]={'a','b'};
+    //prints a,b along with garbage
+    cout<<arr<<endl;
+    char a[10]={'a','b','c','\0'};
+    cout<<a<<endl;
+}
